@@ -1,4 +1,62 @@
 #button{
-	height:200px;
+	height:100px;
 	width:200px;
+	margin-right:500px;
+	margin-top:-300px;
+	z-index: 100000
+}
+
+body{
+	background-color: white;
+	text-align: center;
+}
+
+#colorSpace{
+	text-align: center;
+	list-style-position:inside;
+	z-index: 1000000;
+	margin-right: 200px;
+	font-style: bold;
+}
+
+.element {
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  margin-left: 150px;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
